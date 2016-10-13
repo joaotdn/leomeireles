@@ -1,0 +1,9 @@
+.dotted {
+  border-style: dashed;
+  margin: 2rem 0;
+}
+.divide-30 {
+  @extend .small-12;
+  @extend .float-left;
+  margin-bottom: rem-calc(30);
+}

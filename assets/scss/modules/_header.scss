@@ -1,0 +1,28 @@
+#header {
+  padding: rem-calc(20 0);
+  background-color: $black;
+}
+
+#main-menu {
+  ul {
+    display: inline-block;
+    @include vertical-center;
+    right: 0;
+  }
+  li {
+    line-height: rem-calc(90);
+    &.current {
+      a {
+        color: $secondary-color;
+      }
+    }
+  }
+  a {
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem-calc(15);
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

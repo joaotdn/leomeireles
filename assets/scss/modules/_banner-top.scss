@@ -1,0 +1,62 @@
+#home-slide {
+  margin-bottom: rem-calc(30);
+}
+#main-banner {
+  @extend .rel;
+  height: rem-calc(600);
+  //border-bottom: 2px solid $secondary-color;
+
+  article {
+    padding: rem-calc(40);
+    @include vertical-center;
+  }
+
+  header {
+    h1 {
+      line-height: 1.2;
+      margin-bottom: 0;
+    }
+  }
+
+  a:not(.button-more) {
+    color: $white;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  p {
+    color: $white;
+  }
+
+  @include breakpoint(large up) {
+    header {
+      h1 {
+        font-size: rem-calc(62);
+      }
+    }
+
+    .social {
+      a {
+        font-size: rem-calc(22);
+      }
+    }
+  }
+}
+
+.slide-pagination {
+  span {
+    display: inline-block;
+    margin: rem-calc(0 3);
+    margin-bottom: rem-calc(20);
+    width: rem-calc(20);
+    height: rem-calc(20);
+    background: $white;
+    border-radius: 100%;
+    cursor: pointer;
+
+    &.active {
+      background-color: $secondary-color;
+    }
+  }
+}

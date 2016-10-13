@@ -1,0 +1,113 @@
+.wp-caption > figcaption {
+  max-width: 100%;
+  font-size: 0.8rem;
+  color: #999;
+  padding: 0.25rem 0;
+}
+
+p.wp-caption-text{
+  font-size:90%;
+  color: #666;
+  padding:rem-calc(10) 0;
+}
+
+.alignleft {
+  float: left;
+  padding-right: 1rem;
+  margin: 0;
+}
+
+.alignright {
+  float: right;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rel {
+  position: relative;
+}
+
+//backgrounds
+.bg-cover {
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+}
+.mask-primary {
+  background-color: rgba($primary-color, .8);
+}
+
+//positions
+.abs {
+  position: absolute;
+}
+.top-left {
+  top: 0;
+  left: 0;
+}
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.zi9 {
+  z-index: 9;
+}
+
+//containers
+.full-height {
+  height: 100%;
+}
+
+.section-title {
+  text-transform: uppercase;
+  @include breakpoint(large up) {
+    font-size: rem-calc(20);
+    line-height: rem-calc(36);
+  }
+}
+.widget-section {
+  article {
+    margin-top: rem-calc(20);
+  }
+  iframe {
+    margin-bottom: rem-calc(10);
+  }
+  p {
+    margin-bottom: rem-calc(10);
+  }
+}
+
+//buttons
+.button-more {
+  text-transform: uppercase;
+  @include button-style($white, $secondary-color, $primary-color);
+  padding: rem-calc(10 20);
+}
+.btn-tiny {
+  text-transform: uppercase;
+  @include button-style($white, $secondary-color, $black);
+  font-size: rem-calc(13);
+  border: 1px solid $black;
+  padding: rem-calc(10);
+
+  &.big {
+    font-size: rem-calc(20);
+    font-weight: 900;
+    border-width: 3px;
+  }
+
+  &:hover {
+    border-color: $secondary-color;
+    color: $white;
+  }
+}
+.btn-secondary {
+  @include button-style($secondary-color, $primary-color, $white);
+  padding: rem-calc(10 20);
+}
